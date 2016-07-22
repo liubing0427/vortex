@@ -25,7 +25,7 @@ $.vortex.init({
 -------------------------------
 ### `Options`
 
-key | option type / notes | example | comments
+key | option type / notes | default value | comments
 ----|---------|------|------
 `operands` | string | `'img'` | the elements you want to operate, it will get all child elements which has no child
 `vortex_prefix` | string | `"data-vortex-"` | use this to cache css as element attribute
