@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+.containt{
+	width: 600px;
+	margin: 0 auto;
+}
+.image {
+	<!-- float: left; -->
+}
+</style>
+</head>
+<body>
+	<div class="containt">
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/1.7/jquery.min.js"></script>
+	<script src="vortex.js"></script>
+	<script>
+		+function(){
+			var gifs = ["abe.gif","access.gif","angel.gif","anger.gif",
+			"angry.gif","bandit.gif","beer.gif","bell.gif","bertlett.gif",
+			"bhangra.gif","bike.gif","bing.gif","blackwidow.gif","blush.gif",
+			"bollylove.gif","bomb.gif","bow.gif","bowled.gif","brb.gif",
+			"brokenheart.gif","bucky.gif","bug.gif","bunny.gif","busyday.gif",
+			"cake.gif","call.gif","camera.gif","canyoutalk.gif","captain.gif",
+			"car.gif","cash.gif","cat.gif","chai.gif","champagne.gif","chappal.gif",
+			"cheese.gif","clap.gif","coffee.gif","computer.gif","computerrage.gif",
+			"confidential.gif","cool.gif","coutinho10.gif","cry.gif","cwl.gif",
+			"dance.gif","devil.gif","dhakkan.gif","discodancer.gif","disgust.gif",
+			"diya.gif","dog.gif","doh.gif","donkey.gif","donttalktome.gif","drink.gif",
+			"drunk.gif","dull.gif","eg.gif","emo.gif","envy.gif","excel.gif","facepalm.gif",
+			"fallinlove.gif","fear.gif","festiveparty.gif","finger.gif","fingerscrossed.gif",
+			"fireworks.gif","fistbump.gif","flower.gif","footballfail.gif","fubar.gif",
+			"games.gif","ghost.gif","gift.gif","giggle.gif","golmaal.gif","goodluck.gif",
+			"gottarun.gif","gran.gif","handshake.gif","handsinair.gif","hanukkah.gif",
+			"happy.gif", "headbang.gif","headphones.gif","heart.gif","heidy.gif","henderson14.gif",
+			"hero.gif","hi.gif","highfive.gif","holdon.gif","holi.gif","holidayspirit.gif",
+			"hollest.gif","hug.gif","hungover.gif","idea.gif","inlove.gif","internetexplorer.gif",
+			"island.gif","joy.gif","kaanpakadna.gif","key.gif","kiss.gif","klopp.gif",
+			"kya.gif","laddu.gif","ladyvampire.gif","lalala.gif","laugh.gif","learn.gif",
+			"letsmeet.gif","lfcclap.gif","lfcfacepalm.gif","lfclaugh.gif","lfcparty.gif"
+			,"lfcworried.gif","lips.gif","lipssealed.gif","listening.gif","llsshock.gif"
+			,"mail.gif","makeup.gif","man.gif","microsoft.gif","mlt.gif","mmm.gif",
+			"monkey.gif","mooning.gif", "movember.gif","movie.gif","muscle.gif",
+			"muscleman.gif","music.gif","nahi.gif","naturescall.gif","nazar.gif",
+			"neil.gif","nerdy.gif","nickfury.gif","ninja.gif","no.gif","nod.gif",
+			"ok.gif","oliver.gif","onedrive.gif","onenote.gif","ontheloo.gif","outlook.gif",
+			"oye.gif","party.gif","penguin.gif","phone.gif","pig.gif","pizza.gif","plane.gif",
+			"poke.gif","polarbear.gif","poolparty.gif","poop.gif","powerpoint.gif","praying.gif",
+			"priidu.gif","promise.gif","publisher.gif","puke.gif","pullshot.gif","pumpkin.gif",
+			"punch.gif","rain.gif","rainbow.gif","red.gif","reindeer.gif","rickshaw.gif","rock.gif",
+			"rofl.gif","sad.gif","sadness.gif","santa.gif","santamooning.gif","sarcastic.gif","shake.gif",
+			"sharepoint.gif","sheep.gif","shielddeflect.gif","shivering.gif","shock.gif","shopping.gif",
+			"skipping.gif","skull.gif","slap.gif","sleepy.gif","sloth.gif","smile.gif","smirk.gif","smoke.gif",
+			"snail.gif","snowangel.gif","speechless.gif","star.gif","stop.gif","sturridge15.gif","sun.gif",
+			"surprised.gif","suryannamaskar.gif","swear.gif","sweat.gif","talk.gif","talktothehand.gif",
+			"tandoorichicken.gif","taur.gif","thanks.gif","think.gif","time.gif","tmi.gif","toivo.gif","tongueout.gif",
+			"tubelight.gif","tumbleweed.gif","turkey.gif","tvbinge.gif","umbrella.gif",
+			"unsee.gif","vampire.gif","victory.gif","wait.gif","waiting.gif","wasntme.gif",
+			"wfh.gif","whatsgoingon.gif","whew.gif","whistle.gif","whosthis.gif","win10.gif",
+			"wink.gif","woman.gif","wonder.gif","word.gif","worry.gif","wtf.gif","xbox.gif",
+			"xmastree.gif","yawn.gif","yes.gif","yoga.gif","yotm.gif","zombie.gif"];
+			for(var i = 0; i< gifs.length; i++){
+				var pic = document.createElement("img");
+				pic.id = i;
+				pic.className = "image";
+				pic.setAttribute('src', "gif/" + gifs[i]);
+				pic.width = 20;
+				pic.height = 20;
+				
+                //var name = document.createElement('div');
+                //name.className = 'username';
+                //name.appendChild(pic);
+				$(".containt").append(pic);
+			}
+			$.vortex.init({
+			});
+		}();
+	</script>
+</body>
+</html>
