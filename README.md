@@ -2,7 +2,8 @@
 ###Make your elements in the page moving in a vortex
 -------------------------------
 ### Demo
-///TODO
+http://www.daoimpl.com/jquery.vortex.js
+
 -------------------------------
 ### `Integrating with your Application`
 
