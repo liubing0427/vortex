@@ -11,7 +11,7 @@ Load jquery.vortex.js and configure it:
 
 ```html
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="vortex.js"></script>
+<script src="jquery.vortex.js"></script>
 ```
 
 ```javascript
